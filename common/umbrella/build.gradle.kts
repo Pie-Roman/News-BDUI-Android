@@ -23,4 +23,7 @@ dependencies {
     api(projects.common.core.network)
 
     api(projects.base.uikit)
+
+    api(projects.feature.divkitFeature)
+    api(projects.feature.divkitCustomFeature)
 }

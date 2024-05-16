@@ -1,6 +1,6 @@
 package ru.pyroman.news.domain.divkit
 
-import ru.pyroman.news.common.core.di.Inject
+import org.kodein.di.instance
 import ru.pyroman.news.common.core.di.module
 import ru.pyroman.news.common.core.di.provider
 import ru.pyroman.news.domain.divkit.usecase.GetViewDataUseCase
@@ -10,7 +10,7 @@ val divkitDomainModule = module("divkitDomainModule") {
 
     provider {
         GetViewDataUseCase(
-            divkitRepository = Inject.instance(),
+            divkitRepository = instance(),
         )
     }
 
@@ -18,7 +18,7 @@ val divkitDomainModule = module("divkitDomainModule") {
         tag = "GetViewPatchDataUseCase",
     ) {
         GetViewPatchDataUseCase(
-            divkitRepository = Inject.instance(),
+            divkitRepository = instance(),
         )
     }
 }
