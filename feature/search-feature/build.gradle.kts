@@ -1,10 +1,11 @@
 plugins {
     alias(libs.plugins.kotlinAndroid)
     alias(libs.plugins.androidLibrary)
+    alias(libs.plugins.kotlinParcelize)
 }
 
 android {
-    namespace = "ru.pyroman.news.feature.divkit.custom"
+    namespace = "ru.pyroman.news.feature.search"
     compileSdk = 34
 
     defaultConfig {
@@ -25,10 +26,6 @@ dependencies {
     implementation(projects.base.uikit)
     implementation(projects.common.core)
 
-    implementation(projects.feature.divkitFeature)
-    implementation(projects.feature.searchFeature)
-
-    implementation(libs.divkit.div)
-    implementation(libs.divkit.core)
-    implementation(libs.divkit.json)
+    implementation(projects.domain.searchDomain)
+    implementation(projects.data.searchData)
 }
