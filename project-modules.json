@@ -2,5 +2,25 @@
   {
     "module": ":app",
     "path": "app"
+  },
+  {
+    "module": ":common:core",
+    "path": "common/core"
+  },
+  {
+    "module": ":common:core:di",
+    "path": "common/core/di"
+  },
+  {
+    "module": ":common:core:network",
+    "path": "common/core/network"
+  },
+  {
+    "module": ":common:core:platform",
+    "path": "common/core/platform"
+  },
+  {
+    "module": ":common:umbrella",
+    "path": "common/umbrella"
   }
 ]
