@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "ru.pyroman.news.common.umbrella"
+    namespace = "ru.pyroman.news.base.uikit"
     compileSdk = 34
 
     defaultConfig {
@@ -18,9 +18,8 @@ android {
 }
 
 dependencies {
-    api(projects.common.core)
-    api(projects.common.core.platform)
-    api(projects.common.core.network)
+    api(libs.androidx.fragmentKtx)
+    api(libs.androidx.constraintLayout)
 
-    api(projects.base.uikit)
+    implementation(projects.common.core)
 }
