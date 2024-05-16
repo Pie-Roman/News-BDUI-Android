@@ -1,10 +1,11 @@
 plugins {
     alias(libs.plugins.kotlinAndroid)
     alias(libs.plugins.androidLibrary)
+    alias(libs.plugins.kotlinSerialization)
 }
 
 android {
-    namespace = "ru.pyroman.news.common.umbrella"
+    namespace = "ru.pyroman.news.data.divkit"
     compileSdk = 34
 
     defaultConfig {
@@ -16,14 +17,9 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 }
-
 dependencies {
-    api(projects.common.core)
-    api(projects.common.core.platform)
-    api(projects.common.core.network)
+    implementation(projects.common.core)
+    implementation(projects.common.core.network)
 
-    api(projects.base.uikit)
-
-    api(projects.feature.divkitFeature)
-    api(projects.feature.divkitCustomFeature)
+    implementation(projects.domain.divkitDomain)
 }

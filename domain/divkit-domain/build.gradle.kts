@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "ru.pyroman.news.common.umbrella"
+    namespace = "ru.pyroman.news.domain.divkit"
     compileSdk = 34
 
     defaultConfig {
@@ -18,12 +18,5 @@ android {
 }
 
 dependencies {
-    api(projects.common.core)
-    api(projects.common.core.platform)
-    api(projects.common.core.network)
-
-    api(projects.base.uikit)
-
-    api(projects.feature.divkitFeature)
-    api(projects.feature.divkitCustomFeature)
+    implementation(projects.common.core)
 }
