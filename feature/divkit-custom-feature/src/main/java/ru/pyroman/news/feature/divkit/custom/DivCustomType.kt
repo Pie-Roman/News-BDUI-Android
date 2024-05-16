@@ -4,4 +4,5 @@ enum class DivCustomType(
     val customType: String
 ) {
 
+    SEARCH(customType = "search")
 }

@@ -26,6 +26,7 @@ dependencies {
     implementation(projects.common.core)
 
     implementation(projects.feature.divkitFeature)
+    implementation(projects.feature.searchFeature)
 
     implementation(libs.divkit.div)
     implementation(libs.divkit.core)
