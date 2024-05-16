@@ -1,4 +1,4 @@
-package ru.pyroman.common.core.platform
+package ru.pyroman.news.common.core.platform
 
 import android.content.Context
 

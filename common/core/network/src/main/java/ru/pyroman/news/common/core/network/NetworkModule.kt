@@ -1,4 +1,4 @@
-package ru.pyroman.common.core.network
+package ru.pyroman.news.common.core.network
 
 import io.ktor.client.HttpClient
 import io.ktor.client.plugins.HttpTimeout
@@ -9,7 +9,7 @@ import io.ktor.client.plugins.logging.Logging
 import io.ktor.client.plugins.logging.SIMPLE
 import io.ktor.serialization.kotlinx.json.json
 import kotlinx.serialization.json.Json
-import ru.pyroman.common.core.network.ktor.HttpEngineFactoryAndroid
+import ru.pyroman.news.common.core.network.ktor.HttpEngineFactoryAndroid
 import ru.pyroman.news.common.core.di.module
 import ru.pyroman.news.common.core.di.singleton
 

@@ -1,4 +1,4 @@
-package ru.pyroman.common.core.network.ktor
+package ru.pyroman.news.common.core.network.ktor
 
 import io.ktor.client.engine.HttpClientEngineConfig
 import io.ktor.client.engine.HttpClientEngineFactory
