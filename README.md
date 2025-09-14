@@ -26,7 +26,3 @@ cd NewsBDUIAndroid
 
 - Используйте Gradle для сборки проекта.
 - Запустите `MainActivity`
-
-### Лицензия
-
-Этот проект лицензирован под MIT License - смотрите файл [LICENSE](LICENSE) для деталей.
